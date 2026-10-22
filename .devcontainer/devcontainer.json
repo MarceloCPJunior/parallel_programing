@@ -1,0 +1,18 @@
+{
+  // Usa a mesma imagem do professor (ambiente_pp/Dockerfile), mas monta o
+  // repositório inteiro, para que projeto_mergesort/ fique visível no contêiner.
+  "name": "Programacao Paralela CCO085",
+  "build": {
+    "dockerfile": "../ambiente_pp/Dockerfile",
+    "context": "../ambiente_pp"
+  },
+  "remoteUser": "root",
+  // A imagem do professor não traz git (para o Source Control do VS Code)
+  // nem matplotlib/pandas (para os gráficos do Marco 2).
+  "postCreateCommand": "apt-get update && apt-get install -y --no-install-recommends git python3-matplotlib python3-pandas",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.cpptools"]
+    }
+  }
+}
