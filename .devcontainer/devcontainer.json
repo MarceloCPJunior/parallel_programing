@@ -1,10 +1,10 @@
 {
-  // Usa a mesma imagem do professor (ambiente_pp/Dockerfile), mas monta o
+  // Usa a mesma imagem do professor (material_referencia/ambiente_pp/Dockerfile), mas monta o
   // repositório inteiro, para que projeto_mergesort/ fique visível no contêiner.
   "name": "Programacao Paralela CCO085",
   "build": {
-    "dockerfile": "../ambiente_pp/Dockerfile",
-    "context": "../ambiente_pp"
+    "dockerfile": "../material_referencia/ambiente_pp/Dockerfile",
+    "context": "../material_referencia/ambiente_pp"
   },
   "remoteUser": "root",
   // A imagem do professor não traz git (para o Source Control do VS Code)

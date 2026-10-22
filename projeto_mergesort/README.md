@@ -2,7 +2,7 @@
 
 Programação Paralela · IESB 2026/2 · Prof. Rodrigo Gonçalves
 
-Paralelização do mergesort sequencial de referência (`baselines_sequenciais_CCO085/07_mergesort.cpp`)
+Paralelização do mergesort sequencial de referência (`material_referencia/baselines_sequenciais_CCO085/07_mergesort.cpp`)
 em memória compartilhada (OpenMP) e memória distribuída (MPI).
 
 ## Estrutura
@@ -22,7 +22,7 @@ projeto_mergesort/
 ## Rodando do zero
 
 Requisitos: `g++` com OpenMP e OpenMPI (`mpicxx`, `mpirun`). No laboratório já existem;
-em casa, use o contêiner da disciplina (`ambiente_pp/`, `docker compose run --rm pp-lab`).
+em casa, use o contêiner da disciplina (`.devcontainer/` na raiz do repositório).
 
 ```bash
 cd projeto_mergesort
